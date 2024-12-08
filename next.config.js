@@ -1,9 +1,11 @@
 /** @type {import('next').NextConfig} */
+// next.config.js
 const nextConfig = {
-  reactStrictMode: true,
   typescript: {
-    jsx: "preserve"
-  }
-}
+    ignoreBuildErrors: false,
+    tsconfigPath: "./tsconfig.json",
+  },
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
+
